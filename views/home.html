@@ -7,74 +7,92 @@
     <title>MercadoLiebre</title>
     <link rel="stylesheet" href="css/styles.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/d6e069fb65.js" crossorigin="anonymous"></script>
 </head>
 <body>
-   <header>
-      <div class="logo">
-         <img width="190"  src="imagenes/logo.jpeg">
+   <header class="menu-cabecera">
+      <div class="menu-cabecera-primero">
+         <img width="190"  src="imagenes/logoo.svg" class="logo">
+         <h2 class="opciones-cabecera">
+            <i class="fa-solid fa-hand-holding-dollar"></i>
+            Comprá en cuotas y sin tarjeta de crédito
+         </h2>
       </div>
-        
-      <div>
-         <nav>
-            <a href=""  class="link-navegacion">Ofertas</a>
-            <a href=""  class="link-navegacion">Tiendas oficiales</a>
-            <a href=""  class="link-navegacion">Vender</a>
-            <a href=""  class="link-navegacion">Mis compras</a> 
-            <a href=""  class="link-navegacion">Ingresá</a>
-            <a href=""  class="link-navegacion">Creá tu cuenta</a>
-            <a href=""  class="link-navegacion">Ayuda</a>
+
+      <a href="boton-hamburguesita">
+         <i class="fas fa-bars"></i>
+      </a>
+
+         <nav class="listas-menu-cabecera-barra">
+            <ul class="lista-izquierda">
+              <li><a href=""  class="link-navegacion">Ofertas</a></li>
+              <li><a href=""  class="link-navegacion">Tiendas oficiales</a></li>
+              <li><a href=""  class="link-navegacion">Vender</a></li>
+              <li><a href=""  class="link-navegacion">Ayuda</a></li>
+            </ul>
+
+            <ul class="lista-derecha">
+               <li><a href=""  class="link-navegacion">Creá tu cuenta <i class="fa-solid fa-user-plus"></i></a></li>
+               <li><a href=""  class="link-navegacion">Ingresá <i class="fa-solid fa-right-to-bracket"></i></a></li>
+               <li><a href=""  class="link-navegacion">Mis compras <i class="fa-solid fa-cart-shopping"></i></a></li>
+            </ul>
          </nav>
-      </div>
-      <div class="container">
-        <input type="text" placeholder="Buscar">
-            <i class="fa fa search"></i>
+      <div>
+         <input type="search" id="site-search" name="q">
+         <button>Buscar</button>
       </div>
 
    </header>
 
+
      <main>
-         <section>
+         <div class="contenedor">
+            <div>
+            
+            <img class="imagen-mac" src="imagenes/macbook.jpg">
             <h2>Basado en tu última visita</h2>
-            <img width="300" src="imagenes/macbook.jpg">
             <ul>
                 <li>$990.000</li>
                 <li>15% off</li>
                 <li>MacBook Pro 2019</li>
             </ul>
-         </section>
+            </div>
+         
            
-         <section>
+            <div>
+            
+            <img class="imagen-cafetera" src="imagenes/cafetera.jpg">
             <h2>Sección de ofertas</h2>
-            <img width="300" src="imagenes/cafetera.jpg">
             <ul>
                 <li>$60.000</li>
                 <li>15% off</li>
                 <li>Cafetera eléctrica Liliana</li>
             </ul>
-         </section>
+            </div>
+
+         </div>
      </main>
 
    <br>
    <footer>
-     <section>
+     <nav>
         <h3>Pagá con tarjeta o efectivo</h3>
         <p>Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o efectivo en puntos de pago. ¡Y siempre es seguro!</p>
-     </section>
+     </nav>
      <br>
-     <section>
+     <nav>
         <h3>Envío gratis desde $2500</h3>
         <p>Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de productos. Es un beneficio de Mercado Puntos.</p>
-     </section>
+     </nav>
      <br>
-     <section>
+     <nav>
         <h3>Seguridad, de principio a fin</h3>
         <p>¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer, porque estás siempre protegid@.</p>
-     </section>
+     </nav>
      <br>
-     <section>
+     <nav>
         <h3>Copyright© 1999-2020 MercadoLiebre S.R.L</h3>
-     </section>
+     </nav>
 
    </footer>
 
