@@ -1,74 +1,116 @@
- * {box-sizing: border-box;
-    margin: 0;
-    padding:0;
+ * {box-sizing: border-box
 }
 
 body{
     font-family: sans-serif;
-    margin: 0;
-    background-color: white;
 }
 
-a{
-    text-decoration: none;
-    color: black;
+.menu-cabecera{
+    background-color: rgb(236, 236, 45);
+    padding: 15px;
 }
 
-header{
-    display: flex;
-    min-height: 70px;
-    background-color: rgb(232, 232, 48);
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
+.boton-hamburguesita{
+    background-color: blue;
+    color:white;
+    display: block;
+    margin: auto;
+    padding:5px;
 }
 
 .logo{
+    width: 190px;
+}
+
+.escrituras-cabecera{
+    font-weight: 100;
+    text-align: center;
+}
+
+
+.listas-menu-cabecera-barra ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.listas-menu-cabecera-barra a{
+    text-decoration: none;
+    color: black;
+    display: block;
+    padding: 1px;
+    font-size: 15px;
+}
+
+
+input,
+label {
+    margin: 0.4rem 0;
+    margin: 18px;
+}
+
+.contenedor{
     display: flex;
-    align-items: center;
+    justify-content: center;
+   
+    
 }
 
-.logo img{
-    height: 150px;
+.imagen-mac{
     width: 300px;
+    height: 250px;
+    margin-right: 10px;
 }
 
-nav a{
-    font-weight: 600px;
-    padding-right: 10px;
+.imagen-cafetera{
+    width: 350;
+    height: 250px;
+    margin-left:10px;
 }
 
-.container{
-    position: inherit;
-    left: 48%;
-    top: 45%;
-    padding: 10px;
+@media (min-width: 760px) {
+    .menu-cabecera-primero{
+        display: flex;
+        justify-content: space-between;
+
+    }
+    .escrituras-cabecera{
+        max-width: 350px;
+        text-align: right;
+    }
+    .listas-menu-cabecera-barra{
+        display: flex;
+        justify-content: space-between;
+    }.listas-menu-cabecera-barra ul{
+        display: flex;
+    }
+    .listas-menu-cabecera-barra li{
+        margin: 5px;
+    } 
 }
 
-section{
-    padding: 12px;
+@media (min-width: 1200px) {
+    .menu-cabecera, .listas-menu-cabecera-barra {
+       max-width: 1900px;
+       margin: 10px
+    }
+    .opciones-cabecera{
+        max-width: none;
+        font-size: 18px;
+        font-weight: 400px;
+    }
+    .menu-cabecera-primero{
+        margin-top: 40px;
+    }
+
+    .listas-menu-cabecera-barra li{
+        margin: 0 10px;
+    }
+    .listas-menu-cabecera-barra a{
+        font-size: 19px;
+    }
+
 }
-
-
-ul{
-    padding: 12px;
-    margin: 50px
-
-}
-
-@media (min-width: 460px){
-
-   header{
-    flex-direction: column;
-   }
-   body {
-   background: white;
-   }
-   nav{
-    padding: 10px 0px;
-   }
-  }
-  
 
 
  
